@@ -6,10 +6,10 @@ print("Domo")
 for number in range (1042000,702648265):
   calNumber = 0
   tempNumber = number
-  while (number > 0):
-    calNumber += ((number % 10) **3)
-    number = int(number/10)
-  if(tempNumber == calNumber):
+  while (tempNumber > 0):
+    calNumber += ((tempNumber % 10) **3)
+    tempNumber //= 10)
+  if(number == calNumber):
     print("Armstrong number betwn the range : ", calNumber)
     break
   
